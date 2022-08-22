@@ -1,13 +1,19 @@
 @import "./utils/variables";
+
 @import "./base/base";
 @import "./base/container";
+
 @import "./component/visually-hidden";
+@import "./component/mobile-menu";
+@import "./component/backdrop";
+@import "./component/modal-form";
+
 @import "./layout/header";
 @import "./layout/baner";
 @import "./layout/workgalery";
 @import "./layout/team";
 @import "./layout/clients";
 @import "./layout/footer";
+
 @import "./pages/portfolio";
-@import "./component/backdrop";
-@import "./component/modal-form";
+

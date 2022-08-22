@@ -1,113 +1,157 @@
-/*---header---------------*/
-.header {
-  border-bottom: 1px solid #cac9c9;
+@media screen and (max-width: 1199px) {
+  .contact-list {
+    display: none;
+  }
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .navbar-list {
+    display: none;
+  }
 }
 
-.logo-nav {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-text-color);
-  transform: scale(1);
-  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-      transform: scale(1.05);
-    }
-}
-
-.logoheader {
-  color: var(--title-text-color);
-}
-
-
-.navbar {
-  display: flex;
-}
-
-.navbar-list {
-  display: flex;
-  align-items: center;
-  margin-left: 93px;
-}
-
-.nav-link {
+.page-header-container {
   position: relative;
-
-  &.current::after {
-      content: '';
-      position: absolute;
-      display: block;
-      bottom: -32px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background: #2196f3;
-      border-radius: 2px;
-    }
-}
-
-
-
-.navbar-item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-.contact-list {
-  display: flex;
-  margin-left: auto;
-}
-
-.contact-link {
   display: flex;
   align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
 
-  &:hover,
-  &:focus {
-    color: var(--accent-text-color);
-    fill: var(--accent-text-color);
+.mobile-menu-open {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-open {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+
+  }
+
+  .navbar-list {
+    display: flex;
+    align-items: center;
+    margin-left: 88px;
+  }
+
+  .navbar-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  
+    &:not(:last-child) {
+      margin-right: 50px;
+      }
   }
 }
 
-.contact-item {
-  margin-right: 50px;
-}
+        
+// /*---header---------------*/
+// .header {
+//   border-bottom: 1px solid #cac9c9;
+// }
+
+// .navigation {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .logo-nav {
+//   padding-top: 24px;
+//   padding-bottom: 24px;
+//   font-family: 'Raleway';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   color: var(--accent-text-color);
+//   transform: scale(1);
+//   transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//       transform: scale(1.05);
+//     }
+// }
+
+// .logoheader {
+//   color: var(--title-text-color);
+// }
 
 
-.navbar-list .current {
-  color: var(--accent-text-color);
-}
+// .navbar {
+//   display: flex;
+// }
 
-.phone-contact {
-  margin-right: 10px;
-  fill: currentColor;
-}
 
-.mail-contact {
-  margin-right: 10px;
-  fill: currentColor;
-}
+
+// .nav-link {
+//   position: relative;
+
+//   &.current::after {
+//       content: '';
+//       position: absolute;
+//       display: block;
+//       bottom: -32px;
+//       left: 0;
+//       width: 100%;
+//       height: 4px;
+//       background: #2196f3;
+//       border-radius: 2px;
+//     }
+// }
+
+
+
+
+// .contact-list {
+//   display: flex;
+//   margin-left: auto;
+// }
+
+// .contact-link {
+//   display: flex;
+//   align-items: center;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   color: #757575;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-text-color);
+//     fill: var(--accent-text-color);
+//   }
+// }
+
+// .contact-item {
+//   margin-right: 50px;
+// }
+
+
+// .navbar-list .current {
+//   color: var(--accent-text-color);
+// }
+
+// .phone-contact {
+//   margin-right: 10px;
+//   fill: currentColor;
+// }
+
+// .mail-contact {
+//   margin-right: 10px;
+//   fill: currentColor;
+// }
