@@ -90,7 +90,7 @@ img {
   z-index: 1000;
   top: 0;
   left: 0;
-  background-color: burlywood;
+  background-color: #FFFFFF;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -160,16 +160,20 @@ img {
   display: flex;
 }
 
-.mobile-menu-cosial-link {
+.mobile-menu-cosial-item:not(:last-child) {
   padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mobile-menu-cosial-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.mobile-menu-cosial-link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
-}
-.mobile-menu-cosial-link:not(:first-child) {
-  margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
