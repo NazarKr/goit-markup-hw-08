@@ -898,26 +898,16 @@ img {
     height: 92px;
   }
 }
-/*---footer-------------------------------*/
 .footer {
   padding: 60px 0;
   background-color: #2f303a;
-}
-
-.footer-wraper {
-  display: flex;
-  align-items: baseline;
-}
-
-.address-wraper {
-  flex-grow: 1;
 }
 
 .logo-footer {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
@@ -930,10 +920,6 @@ img {
 
 .logofooter {
   color: var(--primari-white-color);
-}
-
-.footer-list {
-  margin-top: 20px;
 }
 
 .footer-item {
@@ -952,12 +938,6 @@ img {
   color: #ffffff;
 }
 
-.join {
-  display: flex;
-  flex-direction: column;
-  margin-left: 70px;
-}
-
 .join-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -966,15 +946,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primari-white-color);
-}
-
-.join-social-link {
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--primari-white-color);
-}
-
-.footer-subscription {
-  margin-left: 93px;
 }
 
 .footer-subscription-title {
@@ -988,33 +959,21 @@ img {
   color: var(--primari-white-color);
 }
 
-.footer-subscription-mail {
-  margin-right: 12px;
-  padding: 15px 16px;
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background: #2f303a;
-  outline: none;
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    font-size: 26px;
+  }
+  .footer-wraper {
+    display: flex;
+    align-items: baseline;
+  }
+  .address-wraper {
+    flex-grow: 1;
+  }
+  .footer-list {
+    margin-top: 20px;
+  }
 }
-
-.footer-subscription-form::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-subscription-btn {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 28px;
-  gap: 10px;
-}
-
-.footer-subscription-btn-icon {
-  fill: var(--primari-white-color);
-}
-
 /* < !--filer--> */
 .filter-list {
   display: flex;
