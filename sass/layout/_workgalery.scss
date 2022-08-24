@@ -1,17 +1,25 @@
 /* < !--work galery--> */
-.work {
+
+@media screen and (max-width: 1199px) {
+  .work.section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
     padding-top: 0px;
-}
+  }
 
-.work-list {
+  .work-list {
     display: flex;
-}
+  }
 
-.work-item:not(:last-child) {
+  .work-item:not(:last-child) {
     margin-right: 30px;
-}
+  }
 
-.work-title {
+  .work-title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -19,13 +27,13 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-}
+  }
 
-.work-wraper {
+  .work-wraper {
     position: relative;
-}
+  }
 
-.work-text-overlay {
+  .work-text-overlay {
     position: absolute;
     display: flex;
     align-items: center;
@@ -42,4 +50,5 @@
     text-transform: uppercase;
     color: var(--primari-white-color);
     background-color: rgba(47, 48, 58, 0.8);
+  }
 }

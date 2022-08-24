@@ -29,6 +29,13 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+}
+
 .link {
   display: block;
   color: var(--title-text-color);
