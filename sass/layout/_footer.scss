@@ -109,19 +109,21 @@
 }
 
 @media screen and (max-width: 480px) {
-    .footer-subscription-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+  .footer-subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 @media screen and (min-width: 480px) {
-    .footer-subscription-form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+  .footer-subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -135,8 +137,6 @@
   .footer-subscription {
     margin: 0 auto;
   }
-
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -145,13 +145,13 @@
     font-size: 26px;
   }
 
-  .join-title { 
+  .join-title {
     text-align: left;
   }
 
-    .footer-subscription-title {
-      text-align: left;
-    }
+  .footer-subscription-title {
+    text-align: left;
+  }
 
   .footer-subscription-mail {
     width: 358px;
