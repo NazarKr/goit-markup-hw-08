@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primari-text-color);
@@ -39,7 +39,7 @@
 }
 
 .modal-link-policy {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
@@ -55,4 +55,14 @@
 .modal-form-button {
   display: block;
   margin: 0 auto;
+}
+
+ @media screen and (min-width: 1200px) {
+.modal-form-checkbox-label {
+    font-size: 14px;
+  }
+
+.modal-link-policy {
+  font-size: 14px;
+}
 }
