@@ -103,7 +103,7 @@ img {
   transition: opasity 500ms linear visibility 500ms linear;
 }
 
-.mobile-menu.is-hidden {
+.mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
