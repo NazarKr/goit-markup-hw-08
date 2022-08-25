@@ -1,10 +1,11 @@
-// /*---footer-------------------------------*/
+/*---footer-------------------------------*/
 .footer {
   padding: 60px 0;
   background-color: #2f303a;
 }
 
 .logo-footer {
+  text-align: center;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -17,12 +18,16 @@
 
   &:hover,
   &:focus {
-      transform: scale(1.05);
-    }
+    transform: scale(1.05);
+  }
 }
 
 .logofooter {
   color: var(--primari-white-color);
+}
+
+.footer-list {
+  margin-top: 20px;
 }
 
 .footer-item {
@@ -43,6 +48,7 @@
 }
 
 .join-title {
+  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -52,8 +58,13 @@
   color: var(--primari-white-color);
 }
 
+.join-social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primari-white-color);
+}
+
 .footer-subscription-title {
-  display: block;
+  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -63,87 +74,98 @@
   color: var(--primari-white-color);
 }
 
+.footer-subscription-mail {
+  margin-right: 12px;
+  padding: 15px 16px;
+  width: 450px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  outline: none;
+}
 
+.footer-subscription-form::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscription-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 28px;
+  gap: 10px;
+}
+
+.footer-subscription-btn-icon {
+  fill: var(--primari-white-color);
+}
+
+.footer-wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
 
 @media screen and (max-width: 480px) {
-
+    .footer-subscription-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 }
 
 @media screen and (min-width: 480px) {
-
+    .footer-subscription-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 }
 
 @media screen and (min-width: 768px) {
+  .footer-wraper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .footer-subscription {
+    margin: 0 auto;
+  }
+
 
 }
 
 @media screen and (min-width: 1200px) {
   .logo-footer {
-      font-size: 26px;
+    text-align: left;
+    font-size: 26px;
   }
 
-    .footer-wraper { 
-      display: flex;
-      align-items: baseline;
-    }
-  
-    .address-wraper {
-      flex-grow: 1;
+  .join-title { 
+    text-align: left;
+  }
+
+    .footer-subscription-title {
+      text-align: left;
     }
 
-        .footer-list {
-          margin-top: 20px;
-        }
+  .footer-subscription-mail {
+    width: 358px;
+  }
+
+  .address-wraper {
+    flex-grow: 1;
+  }
+
+  .footer-subscription-form {
+    flex-direction: row;
+  }
+
+  .footer-subscription {
+    margin-left: 93px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-// .join {
-//   display: flex;
-//   flex-direction: column;
-//   margin-left: 70px;
-// }
-
-
-
-
-// .footer-subscription {
-//   margin-left: 93px;
-// }
-
-
-
-// .footer-subscription-mail {
-//   margin-right: 12px;
-//   padding: 15px 16px;
-//   width: 358px;
-//   height: 50px;
-//   border: 1px solid rgba(255, 255, 255, 0.3);
-//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//   border-radius: 4px;
-//   background: #2f303a;
-//   outline: none;
-// }
-
-// .footer-subscription-form::placeholder {
-//   color: rgba(255, 255, 255, 0.6);
-// }
-
-// .footer-subscription-btn {
-//   display: inline-flex;
-//   align-items: center;
-//   padding: 10px 28px;
-//   gap: 10px;
-// }
-
-// .footer-subscription-btn-icon {
-//   fill: var(--primari-white-color);
-// }
