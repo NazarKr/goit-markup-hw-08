@@ -953,16 +953,18 @@ img {
   margin-top: 20px;
 }
 
-.footer-item {
+.footer-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.contact-link {
+  text-align: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-.footer-item:not(:last-child) {
-  margin-bottom: 9px;
 }
 
 .footer-map {
@@ -986,8 +988,6 @@ img {
 }
 
 .footer-subscription-title {
-  text-align: center;
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -998,7 +998,6 @@ img {
 
 .footer-subscription-mail {
   margin-top: 20px;
-  margin-right: 12px;
   padding: 15px 16px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1027,7 +1026,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 60px;
 }
 
 @media screen and (max-width: 480px) {
@@ -1042,6 +1041,16 @@ img {
   }
 }
 @media screen and (min-width: 480px) {
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .footer-subscription-form {
     display: flex;
     flex-direction: column;
@@ -1058,12 +1067,20 @@ img {
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
+    gap: 30px;
   }
   .footer-subscription {
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
+  .footer-wraper {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+  .footer-list {
+    align-items: flex-start;
+  }
   .logo-footer {
     text-align: left;
     font-size: 26px;
@@ -1071,8 +1088,8 @@ img {
   .join-title {
     text-align: left;
   }
-  .footer-subscription-title {
-    text-align: left;
+  .footer-subscription {
+    align-items: flex-start;
   }
   .footer-subscription-mail {
     width: 358px;
@@ -1081,7 +1098,10 @@ img {
     flex-grow: 1;
   }
   .footer-subscription-form {
-    flex-direction: row;
+    display: block;
+  }
+  .footer-subscription-btn {
+    margin-left: 12px;
   }
   .footer-subscription {
     margin-left: 93px;
@@ -1091,7 +1111,7 @@ img {
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .filter-list__item {
@@ -1209,6 +1229,9 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
+  .filter-list {
+    margin-bottom: 30px;
+  }
   .portfolio-work__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1218,6 +1241,9 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
+  }
   .portfolio-work__list {
     gap: 30px;
     flex-basis: calc((100% - 60px) / 3);

@@ -3,7 +3,7 @@
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .filter-list__item {
@@ -138,6 +138,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .filter-list {
+      margin-bottom: 30px;
+    }
+
   .portfolio-work__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -149,6 +153,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .filter-list {
+      margin-bottom: 50px;
+    }
+  
   .portfolio-work__list {
     gap: 30px;
     flex-basis: calc((100% - 60px) / 3);

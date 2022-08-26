@@ -17,31 +17,87 @@
 <body>
   <!--header-->
   <header class="header">
-    <div class="conteiner navigation">
+    <div class="conteiner navigation page-header-container">
       <nav class="navbar">
         <a class="logo-nav link" href="index.html">Web<span class="logoheader">studio</span></a>
         <ul class="navbar-list list">
-          <li class="navbar-item"><a class="nav-link link" href="./index.html">Студія</a></li>
-          <li class="navbar-item"><a class="nav-link link current" href="./portfolio.html">Портфоліо</a></li>
-          <li class="navbar-item"><a class="nav-link link" href="">Контакти</a></li>
+          <li class="navbar-item">
+            <a class="nav-link link" href="./index.html">Студія</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link link current" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link link" href="">Контакти</a>
+          </li>
         </ul>
       </nav>
+      <button type="button" class="mobile-menu-open" data-menu-open>
+        <svg class="menu-mobile-open_icon" width="40" height="40">
+          <use href="./img/symbol-defs.svg#icon-burger-open"></use>
+        </svg>
+      </button>
       <ul class="contact-list list">
         <li class="contact-item">
           <a class="contact-link link" href="mailto:info@devstudio.com">
             <svg class="mail-contact" width="16" height="12">
-              <use href="./img/symbol-defs.svg#icon-mail">
-              </use>
-            </svg>info@devstudio.com</a>
+              <use href="./img/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com
+          </a>
         </li>
         <li class="contact-item">
           <a class="contact-link link" href="tel:+380961111111">
             <svg class="phone-contact" width="10" height="16">
-              <use href="./img/symbol-defs.svg#icon-smartphone">
-              </use>
-            </svg>+380961111111</a>
+              <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+            +380961111111</a>
         </li>
       </ul>
+    </div>
+    <div class="mobile-menu" data-menu>
+      <div class="conteiner mobile-mebu-conteiner">
+        <ul class="mobile-menu-list list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link current" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu-contact-list list">
+          <li class="mobile-menu-contact-item contact">
+            <a class="mobile-menu-contact-link link" href="tel:+380961111111"> +380961111111</a>
+          </li>
+          <li class="mobile-menu-contact-item mail">
+            <a class="mobile-menu-contact-link link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-menu-cosial list">
+          <li class="mobile-menu-cosial-item">
+            <a href="" class="mobile-menu-cosial-link link">Instagram</a>
+          </li>
+          <li class="mobile-menu-cosial-item">
+            <a href="" class="mobile-menu-cosial-link link">Twitter</a>
+          </li>
+          <li class="mobile-menu-cosial-item">
+            <a href="" class="mobile-menu-cosial-link link">Facebook</a>
+          </li>
+          <li class="mobile-menu-cosial-item">
+            <a href="" class="mobile-menu-cosial-link link">LinkedIn</a>
+          </li>
+        </ul>
+        <button type="button" class="mobile-menu-close-btn" data-menu-close>
+          <svg class="mobile-menu-icon" width="40" height="40">
+            <use href="./img/symbol-defs.svg#icon-close-modal-black"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
   <!--main-->
@@ -74,23 +130,23 @@
               <div class="portfolio-work__wraper">
                 <picture>
                   <source srcset="
-                      ./img/mobile/pr1-mobile/pr1-mobile.jpg    1x,
-                      ./img/mobile/pr1-mobile/pr1-mobile@2x.jpg 2x
-                    " media="(max-width: 767px)" />
+                        ./img/desktop/pr1-desktop/pr1-desktop.jpg    1x,
+                        ./img/desktop/pr1-desktop/pr1-desktop@2x.jpg 2x
+                      " media="(min-width: 1200px)" />
                   <source srcset="
-                      ./img/desktop/pr1-desktop/pr1-desktop.jpg    1x,
-                      ./img/desktop/pr1-desktop/pr1-desktop@2x.jpg 2x
-                    " media="(min-width: 1200px)" />
+                        ./img/tablet/pr1-tablet/pr1-tablet.jpg    1x,
+                        ./img/tablet/pr1-tablet/pr1-tablet@2x.jpg 2x
+                      " media="(min-width: 768px) " />
                   <source srcset="
-                      ./img/tablet/pr1-tablet/pr1-tablet.jpg    1x,
-                      ./img/tablet/pr1-tablet/pr1-tablet@2x.jpg 2x
-                    " media="(min-width: 768px) " />
+                        ./img/mobile/pr1-mobile/pr1-mobile.jpg    1x,
+                        ./img/mobile/pr1-mobile/pr1-mobile@2x.jpg 2x
+                      " media="(max-width: 767px)" />
                   <img src="./img/desktop/pr1-desktop/pr1-desktop.jpg" alt="notebook" />
                 </picture>
-                <p class="portfolio-work__wraper__overlay">Ресурс предлагает комплексные предложения с
-                  разным уровнем функционала и
-                  сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                <p class="portfolio-work__wraper__overlay">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
                 </p>
               </div>
               <div class="portfolio-work__name">
@@ -104,22 +160,23 @@
               <div class="portfolio-work__wraper">
                 <picture>
                   <source srcset="
-                                      ./img/mobile/pr2-mobile/pr2-mobile.jpg    1x,
-                                      ./img/mobile/pr2-mobile/pr2-mobile@2x.jpg 2x
-                                    " media="(max-width: 767px)" />
+                        ./img/desktop/pr2-desktop/pr2-desktop.jpg    1x,
+                        ./img/desktop/pr2-desktop/pr2-desktop@2x.jpg 2x
+                      " media="(min-width: 1200px)" />
                   <source srcset="
-                                      ./img/desktop/pr2-desktop/pr2-desktop.jpg    1x,
-                                      ./img/desktop/pr2-desktop/pr2-desktop@2x.jpg 2x
-                                    " media="(min-width: 1200px)" />
+                        ./img/tablet/pr2-tablet/pr2-tablet.jpg    1x,
+                        ./img/tablet/pr2-tablet/pr2-tablet@2x.jpg 2x
+                      " media="(min-width: 768px) " />
                   <source srcset="
-                                      ./img/tablet/pr2-tablet/pr2-tablet.jpg    1x,
-                                      ./img/tablet/pr2-tablet/pr2-tablet@2x.jpg 2x
-                                    " media="(min-width: 768px) " />
+                        ./img/mobile/pr2-mobile/pr2-mobile.jpg    1x,
+                        ./img/mobile/pr2-mobile/pr2-mobile@2x.jpg 2x
+                      " media="(max-width: 767px)" />
                   <img src="./img/desktop/pr2-desktop/pr2-desktop.jpg" alt="notebook" />
                 </picture>
-                <p class="portfolio-work__wraper__overlay">Ресурс предлагает комплексные предложения с
-                  разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                  компании или частном лице.
+                <p class="portfolio-work__wraper__overlay">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
                 </p>
               </div>
               <div class="portfolio-work__name">
@@ -133,23 +190,23 @@
               <div class="portfolio-work__wraper">
                 <picture>
                   <source srcset="
-                                      ./img/mobile/pr3-mobile/pr3-mobile.jpg    1x,
-                                      ./img/mobile/pr3-mobile/pr3-mobile@2x.jpg 2x
-                                    " media="(max-width: 767px)" />
+                        ./img/desktop/pr3-desktop/pr3-desktop.jpg    1x,
+                        ./img/desktop/pr3-desktop/pr3-desktop@2x.jpg 2x
+                      " media="(min-width: 1200px)" />
                   <source srcset="
-                                      ./img/desktop/pr3-desktop/pr3-desktop.jpg    1x,
-                                      ./img/desktop/pr3-desktop/pr3-desktop@2x.jpg 2x
-                                    " media="(min-width: 1200px)" />
+                        ./img/tablet/pr3-tablet/pr3-tablet.jpg    1x,
+                        ./img/tablet/pr3-tablet/pr3-tablet@2x.jpg 2x
+                      " media="(min-width: 768px) " />
                   <source srcset="
-                                      ./img/tablet/pr3-tablet/pr3-tablet.jpg    1x,
-                                      ./img/tablet/pr3-tablet/pr3-tablet@2x.jpg 2x
-                                    " media="(min-width: 768px) " />
+                        ./img/mobile/pr3-mobile/pr3-mobile.jpg    1x,
+                        ./img/mobile/pr3-mobile/pr3-mobile@2x.jpg 2x
+                      " media="(max-width: 767px)" />
                   <img src="./img/desktop/pr3-desktop/pr3-desktop.jpg" alt="notebook" />
                 </picture>
-                <p class="portfolio-work__wraper__overlay">Ресурс предлагает комплексные предложения с
-                  разным уровнем функционала и
-                  сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                <p class="portfolio-work__wraper__overlay">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
                 </p>
               </div>
               <div class="portfolio-work__name">
@@ -163,23 +220,23 @@
               <div class="portfolio-work__wraper">
                 <picture>
                   <source srcset="
-                      ./img/mobile/pr4-mobile/pr4-mobile.jpg    1x,
-                      ./img/mobile/pr4-mobile/pr4-mobile@2x.jpg 2x
-                    " media="(max-width: 767px)" />
+                        ./img/desktop/pr4-desktop/pr4-desktop.jpg    1x,
+                        ./img/desktop/pr4-desktop/pr4-desktop@2x.jpg 2x
+                      " media="(min-width: 1200px)" />
                   <source srcset="
-                      ./img/desktop/pr4-desktop/pr4-desktop.jpg    1x,
-                      ./img/desktop/pr4-desktop/pr4-desktop@2x.jpg 2x
-                    " media="(min-width: 1200px)" />
+                        ./img/tablet/pr4-tablet/pr4-tablet.jpg    1x,
+                        ./img/tablet/pr4-tablet/pr4-tablet@2x.jpg 2x
+                      " media="(min-width: 768px) " />
                   <source srcset="
-                      ./img/tablet/pr4-tablet/pr4-tablet.jpg    1x,
-                      ./img/tablet/pr4-tablet/pr4-tablet@2x.jpg 2x
-                    " media="(min-width: 768px) " />
+                        ./img/mobile/pr4-mobile/pr4-mobile.jpg    1x,
+                        ./img/mobile/pr4-mobile/pr4-mobile@2x.jpg 2x
+                      " media="(max-width: 767px)" />
                   <img src="./img/desktop/pr4-desktop/pr4-desktop.jpg" alt="notebook" />
                 </picture>
-                <p class="portfolio-work__wraper__overlay">Ресурс предлагает комплексные предложения с
-                  разным уровнем функционала и
-                  сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                <p class="portfolio-work__wraper__overlay">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
                 </p>
               </div>
               <div class="portfolio-work__name">
@@ -193,23 +250,23 @@
               <div class="portfolio-work__wraper">
                 <picture>
                   <source srcset="
-                      ./img/mobile/pr5-mobile/pr5-mobile.jpg    1x,
-                      ./img/mobile/pr5-mobile/pr5-mobile@2x.jpg 2x
-                    " media="(max-width: 767px)" />
+                        ./img/desktop/pr5-desktop/pr5-desktop.jpg    1x,
+                        ./img/desktop/pr5-desktop/pr5-desktop@2x.jpg 2x
+                      " media="(min-width: 1200px)" />
                   <source srcset="
-                      ./img/desktop/pr5-desktop/pr5-desktop.jpg    1x,
-                      ./img/desktop/pr5-desktop/pr5-desktop@2x.jpg 2x
-                    " media="(min-width: 1200px)" />
+                        ./img/tablet/pr5-tablet/pr5-tablet.jpg    1x,
+                        ./img/tablet/pr5-tablet/pr5-tablet@2x.jpg 2x
+                      " media="(min-width: 768px) " />
                   <source srcset="
-                      ./img/tablet/pr5-tablet/pr5-tablet.jpg    1x,
-                      ./img/tablet/pr5-tablet/pr5-tablet@2x.jpg 2x
-                    " media="(min-width: 768px) " />
+                        ./img/mobile/pr5-mobile/pr5-mobile.jpg    1x,
+                        ./img/mobile/pr5-mobile/pr5-mobile@2x.jpg 2x
+                      " media="(max-width: 767px)" />
                   <img src="./img/desktop/pr5-desktop/pr5-desktop.jpg" alt="notebook" />
                 </picture>
-                <p class="portfolio-work__wraper__overlay">Ресурс предлагает комплексные предложения с
-                  разным уровнем функционала и
-                  сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                <p class="portfolio-work__wraper__overlay">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
                 </p>
               </div>
               <div class="portfolio-work__name">
@@ -223,23 +280,23 @@
               <div class="portfolio-work__wraper">
                 <picture>
                   <source srcset="
-                      ./img/mobile/pr6-mobile/pr6-mobile.jpg    1x,
-                      ./img/mobile/pr6-mobile/pr6-mobile@2x.jpg 2x
-                    " media="(max-width: 767px)" />
+                        ./img/desktop/pr6-desktop/pr6-desktop.jpg    1x,
+                        ./img/desktop/pr6-desktop/pr6-desktop@2x.jpg 2x
+                      " media="(min-width: 1200px)" />
                   <source srcset="
-                      ./img/desktop/pr6-desktop/pr6-desktop.jpg    1x,
-                      ./img/desktop/pr6-desktop/pr6-desktop@2x.jpg 2x
-                    " media="(min-width: 1200px)" />
+                        ./img/tablet/pr6-tablet/pr6-tablet.jpg    1x,
+                        ./img/tablet/pr6-tablet/pr6-tablet@2x.jpg 2x
+                      " media="(min-width: 768px) " />
                   <source srcset="
-                      ./img/tablet/pr6-tablet/pr6-tablet.jpg    1x,
-                      ./img/tablet/pr6-tablet/pr6-tablet@2x.jpg 2x
-                    " media="(min-width: 768px) " />
+                        ./img/mobile/pr6-mobile/pr6-mobile.jpg    1x,
+                        ./img/mobile/pr6-mobile/pr6-mobile@2x.jpg 2x
+                      " media="(max-width: 767px)" />
                   <img src="./img/desktop/pr6-desktop/pr6-desktop.jpg" alt="notebook" />
                 </picture>
-                <p class="portfolio-work__wraper__overlay">Ресурс предлагает комплексные предложения с
-                  разным уровнем функционала и
-                  сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                <p class="portfolio-work__wraper__overlay">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
                 </p>
               </div>
               <div class="portfolio-work__name">
@@ -253,23 +310,23 @@
               <div class="portfolio-work__wraper">
                 <picture>
                   <source srcset="
-                      ./img/mobile/pr7-mobile/pr7-mobile.jpg    1x,
-                      ./img/mobile/pr7-mobile/pr7-mobile@2x.jpg 2x
-                    " media="(max-width: 767px)" />
+                        ./img/desktop/pr7-desktop/pr7-desktop.jpg    1x,
+                        ./img/desktop/pr7-desktop/pr7-desktop@2x.jpg 2x
+                      " media="(min-width: 1200px)" />
                   <source srcset="
-                      ./img/desktop/pr7-desktop/pr7-desktop.jpg    1x,
-                      ./img/desktop/pr7-desktop/pr7-desktop@2x.jpg 2x
-                    " media="(min-width: 1200px)" />
+                        ./img/tablet/pr7-tablet/pr7-tablet.jpg    1x,
+                        ./img/tablet/pr7-tablet/pr7-tablet@2x.jpg 2x
+                      " media="(min-width: 768px) " />
                   <source srcset="
-                      ./img/tablet/pr7-tablet/pr7-tablet.jpg    1x,
-                      ./img/tablet/pr7-tablet/pr7-tablet@2x.jpg 2x
-                    " media="(min-width: 768px) " />
+                        ./img/mobile/pr7-mobile/pr7-mobile.jpg    1x,
+                        ./img/mobile/pr7-mobile/pr7-mobile@2x.jpg 2x
+                      " media="(max-width: 767px)" />
                   <img src="./img/desktop/pr7-desktop/pr7-desktop.jpg" alt="notebook" />
                 </picture>
-                <p class="portfolio-work__wraper__overlay">Ресурс предлагает комплексные предложения с
-                  разным уровнем функционала и
-                  сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                <p class="portfolio-work__wraper__overlay">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
                 </p>
               </div>
               <div class="portfolio-work__name">
@@ -283,23 +340,23 @@
               <div class="portfolio-work__wraper">
                 <picture>
                   <source srcset="
-                      ./img/mobile/pr8-mobile/pr8-mobile.jpg    1x,
-                      ./img/mobile/pr8-mobile/pr8-mobile@2x.jpg 2x
-                    " media="(max-width: 767px)" />
+                        ./img/desktop/pr8-desktop/pr8-desktop.jpg    1x,
+                        ./img/desktop/pr8-desktop/pr8-desktop@2x.jpg 2x
+                      " media="(min-width: 1200px)" />
                   <source srcset="
-                      ./img/desktop/pr8-desktop/pr8-desktop.jpg    1x,
-                      ./img/desktop/pr8-desktop/pr8-desktop@2x.jpg 2x
-                    " media="(min-width: 1200px)" />
+                        ./img/tablet/pr8-tablet/pr8-tablet.jpg    1x,
+                        ./img/tablet/pr8-tablet/pr8-tablet@2x.jpg 2x
+                      " media="(min-width: 768px) " />
                   <source srcset="
-                      ./img/tablet/pr8-tablet/pr8-tablet.jpg    1x,
-                      ./img/tablet/pr8-tablet/pr8-tablet@2x.jpg 2x
-                    " media="(min-width: 768px) " />
+                        ./img/mobile/pr8-mobile/pr8-mobile.jpg    1x,
+                        ./img/mobile/pr8-mobile/pr8-mobile@2x.jpg 2x
+                      " media="(max-width: 767px)" />
                   <img src="./img/desktop/pr8-desktop/pr8-desktop.jpg" alt="notebook" />
                 </picture>
-                <p class="portfolio-work__wraper__overlay">Ресурс предлагает комплексные предложения с
-                  разным уровнем функционала и
-                  сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                <p class="portfolio-work__wraper__overlay">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
                 </p>
               </div>
               <div class="portfolio-work__name">
@@ -311,25 +368,25 @@
           <li class="portfolio-work__item item">
             <a class="portfolio-work__link link" href="">
               <div class="portfolio-work__wraper">
-                <picture>
-                  <source srcset="
-                      ./img/mobile/pr9-mobile/pr9-mobile.jpg    1x,
-                      ./img/mobile/pr9-mobile/pr9-mobile@2x.jpg 2x
-                    " media="(max-width: 767px)" />
-                  <source srcset="
+                <source srcset="
                       ./img/desktop/pr9-desktop/pr9-desktop.jpg    1x,
                       ./img/desktop/pr9-desktop/pr9-desktop@2x.jpg 2x
                     " media="(min-width: 1200px)" />
-                  <source srcset="
+                <source srcset="
                       ./img/tablet/pr9-tablet/pr9-tablet.jpg    1x,
                       ./img/tablet/pr9-tablet/pr9-tablet@2x.jpg 2x
                     " media="(min-width: 768px) " />
+                <picture>
+                  <source srcset="
+                        ./img/mobile/pr9-mobile/pr9-mobile.jpg    1x,
+                        ./img/mobile/pr9-mobile/pr9-mobile@2x.jpg 2x
+                      " media="(max-width: 767px)" />
                   <img src="./img/desktop/pr9-desktop/pr9-desktop.jpg" alt="notebook" />
                 </picture>
-                <p class="portfolio-work__wraper__overlay">Ресурс предлагает комплексные предложения с
-                  разным уровнем функционала и
-                  сервисов.
-                  Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                <p class="portfolio-work__wraper__overlay">
+                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                  или частном лице.
                 </p>
               </div>
               <div class="portfolio-work__name">
@@ -351,8 +408,7 @@
           <ul class="footer-list list">
             <li class="footer-item">
               <a class="footer-map link" href="https://goo.gl/maps/QaSQcrVwAwJUvmYh8" target="_blank" rel="">м. Київ,
-                пр-т
-                Лесі Українки, 26</a>
+                пр-т Лесі Українки, 26</a>
             </li>
             <li class="footer-item">
               <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -398,7 +454,7 @@
       </div>
       <div class="footer-subscription">
         <label for="footer-mail" class="footer-subscription-title">Подпишитесь на рассылку</label>
-        <form action="" class="footer-subscription-form">
+        <form class="footer-subscription-form">
           <input type="email" name="footer-user-mail" class="footer-subscription-mail" id="footer-mail"
             placeholder="E-mail" required />
           <button type="submit" class="btn footer-subscription-btn">
@@ -411,7 +467,6 @@
       </div>
     </div>
   </footer>
-  </div>
 </body>
 
 </html>
