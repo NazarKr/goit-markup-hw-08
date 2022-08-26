@@ -20,8 +20,11 @@
 
 }
 
-.mobile-mebu-conteiner {
+.mobile-menu-conteiner {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -38,9 +41,9 @@
     cursor: pointer;
 }
 
-.mobile-menu-list {
-    margin-bottom: 302px;
-}
+// .mobile-menu-list {
+
+// }
 
 .mobile-menu-item {
     font-weight: 500;
@@ -54,13 +57,17 @@
     }
 }
 
+.mobile-menu-link.current {
+    color: var(--accent-text-color);
+}
+
 .mobile-menu-contact-item {
     margin-bottom: 32px;
 }
 
 
 
-.contact {
+.mobile-menu-contact-link-contact {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;
@@ -68,7 +75,7 @@
     color: #2196F3;
 }
 
-.mail {
+.mobile-menu-contact-link-mail {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;

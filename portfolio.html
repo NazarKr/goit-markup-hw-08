@@ -56,42 +56,44 @@
       </ul>
     </div>
     <div class="mobile-menu" data-menu>
-      <div class="conteiner mobile-mebu-conteiner">
+      <div class="conteiner mobile-menu-conteiner">
         <ul class="mobile-menu-list list">
           <li class="mobile-menu-item">
-            <a class="mobile-menu-link link current" href="./index.html">Студія</a>
+            <a class="mobile-menu-link  link" href="./index.html">Студія</a>
           </li>
           <li class="mobile-menu-item">
-            <a class="mobile-menu-link link" href="./portfolio.html">Портфоліо</a>
+            <a class="mobile-menu-link link current" href="./portfolio.html">Портфоліо</a>
           </li>
           <li class="mobile-menu-item">
             <a class="mobile-menu-link link" href="">Контакти</a>
           </li>
         </ul>
-        <ul class="mobile-menu-contact-list list">
-          <li class="mobile-menu-contact-item contact">
-            <a class="mobile-menu-contact-link link" href="tel:+380961111111"> +380961111111</a>
-          </li>
-          <li class="mobile-menu-contact-item mail">
-            <a class="mobile-menu-contact-link link" href="mailto:info@devstudio.com">
-              info@devstudio.com
-            </a>
-          </li>
-        </ul>
-        <ul class="mobile-menu-cosial list">
-          <li class="mobile-menu-cosial-item">
-            <a href="" class="mobile-menu-cosial-link link">Instagram</a>
-          </li>
-          <li class="mobile-menu-cosial-item">
-            <a href="" class="mobile-menu-cosial-link link">Twitter</a>
-          </li>
-          <li class="mobile-menu-cosial-item">
-            <a href="" class="mobile-menu-cosial-link link">Facebook</a>
-          </li>
-          <li class="mobile-menu-cosial-item">
-            <a href="" class="mobile-menu-cosial-link link">LinkedIn</a>
-          </li>
-        </ul>
+        <div class="mobile-menu-contact">
+          <ul class="mobile-menu-contact-list list">
+            <li class="mobile-menu-contact-item contact">
+              <a class="mobile-menu-contact-link link" href="tel:+380961111111"> +380961111111</a>
+            </li>
+            <li class="mobile-menu-contact-item mail">
+              <a class="mobile-menu-contact-link link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-cosial list">
+            <li class="mobile-menu-cosial-item">
+              <a href="" class="mobile-menu-cosial-link link">Instagram</a>
+            </li>
+            <li class="mobile-menu-cosial-item">
+              <a href="" class="mobile-menu-cosial-link link">Twitter</a>
+            </li>
+            <li class="mobile-menu-cosial-item">
+              <a href="" class="mobile-menu-cosial-link link">Facebook</a>
+            </li>
+            <li class="mobile-menu-cosial-item">
+              <a href="" class="mobile-menu-cosial-link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
         <button type="button" class="mobile-menu-close-btn" data-menu-close>
           <svg class="mobile-menu-icon" width="40" height="40">
             <use href="./img/symbol-defs.svg#icon-close-modal-black"></use>
@@ -180,7 +182,7 @@
                 </p>
               </div>
               <div class="portfolio-work__name">
-                <h2 class="portfolio-work__title">New Orlean vs Golden Star</h2>
+                <h2 class="portfolio-work__title">Постер New Orlean vs Golden Star</h2>
                 <p class="portfolio-work__text">Дизайн</p>
               </div>
             </a>
@@ -411,10 +413,10 @@
                 пр-т Лесі Українки, 26</a>
             </li>
             <li class="footer-item">
-              <a class="contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="footer-contact-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li class="footer-item">
-              <a class="contact-link link" href="tel:+380961111111">+380961111111</a>
+              <a class="footer-contact-link link" href="tel:+380961111111">+380961111111</a>
             </li>
           </ul>
         </address>
@@ -467,6 +469,9 @@
       </div>
     </div>
   </footer>
+      <!-- js script -->
+      <script src="./js/modal.js"></script>
+      <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

@@ -75,7 +75,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
@@ -141,6 +140,10 @@
   .filter-list {
       margin-bottom: 30px;
     }
+
+        .filter-list__item {
+          margin-bottom: 0;
+        }
 
   .portfolio-work__list {
     flex-direction: row;
