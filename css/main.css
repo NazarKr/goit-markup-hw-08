@@ -113,10 +113,9 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-left: 40px;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  justify-content: space-between;
+  height: 100%;
+  padding: 48px 40px;
 }
 
 .mobile-menu-close-btn {
