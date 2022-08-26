@@ -114,9 +114,9 @@
     justify-content: flex-start;
   }
 
-  .filter-list__item {
-    margin-bottom: 15px;
-  }
+  // .filter-list__item:not(:last-child) {
+  //   margin-bottom: 15px;
+  // }
 }
 
 @media screen and (min-width: 480px) {
@@ -131,9 +131,9 @@
     justify-content: flex-start;
   }
 
-  .filter-list__item {
-    margin-bottom: 15px;
-  }
+  // .filter-list__item {
+  //   margin-bottom: 15px;
+  // }
 }
 
 @media screen and (min-width: 768px) {

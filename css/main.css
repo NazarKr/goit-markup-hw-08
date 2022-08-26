@@ -1214,9 +1214,6 @@ img {
   .filter-list {
     justify-content: flex-start;
   }
-  .filter-list__item {
-    margin-bottom: 15px;
-  }
 }
 @media screen and (min-width: 480px) {
   .portfolio-work__list {
@@ -1227,9 +1224,6 @@ img {
   }
   .filter-list {
     justify-content: flex-start;
-  }
-  .filter-list__item {
-    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 768px) {
