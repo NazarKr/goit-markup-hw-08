@@ -52,7 +52,7 @@
   }
 
   .content-item {
-    width: 354px;
+    flex-basis: calc((100% - 30px)/2);
 
     &:not(:last-child) {
         margin-bottom: 0;
@@ -62,6 +62,6 @@
 
 @media screen and (min-width: 1200px) {
   .content-item {
-    width: 270px;
+    flex-basis: calc((100% - 3 * 30px)/4);
   }
 }

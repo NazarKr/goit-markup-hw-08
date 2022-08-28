@@ -105,7 +105,7 @@
     }
 
   .team-item {
-    max-width: 450px;
+    flex-basis: calc((100% - 30px)/2);
   }
 
         
@@ -137,4 +137,8 @@
       margin-bottom: 50px;
       font-size: 36px;
     }
+
+            .team-item {
+              flex-basis: calc((100% - 3 * 30px)/4);
+            }
 }
