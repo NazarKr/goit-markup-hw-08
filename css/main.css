@@ -977,8 +977,11 @@ img {
 }
 
 .footer-map {
-  color: #ffffff;
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .join-title {
