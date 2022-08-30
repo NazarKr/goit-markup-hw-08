@@ -1181,6 +1181,7 @@ img {
 }
 
 .portfolio-work__name {
+  flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
